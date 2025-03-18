@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
@@ -73,3 +74,7 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+=======
+# cwowd-news
+Cette fois-ci j'y crois^^
+>>>>>>> 592830b662d3c0803fc51292857d9fda08e97a0c
