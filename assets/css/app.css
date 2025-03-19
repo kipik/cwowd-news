@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+@plugin "daisyui" {
+  .primary {
+    @apply text-primary-content bg-primary;
+  }
+  .secondary {
+    @apply text-secondary-content bg-secondary;
+  }
+  .accent {
+    @apply text-accent-content bg-accent;
+  }
+  .neutral {
+    @apply text-neutral-content bg-neutral;
+  }
+  .base-100 {
+    @apply text-base-content bg-base-100;
+  }
+  .base-200 {
+    @apply text-base-content bg-base-200;
+  }
+  .base-300 {
+    @apply text-base-content bg-base-300;
+  }
+  .info {
+    @apply text-info-content bg-info;
+  }
+  .success {
+    @apply text-success-content bg-success;
+  }
+  .warning {
+    @apply text-warning-content bg-warning;
+  }
+  .error {
+    @apply text-error-content bg-error;
+  }
+}
