@@ -65,7 +65,7 @@
         <h1 class="text-5xl font-bold text-white mb-4">Bienvenue sur Cwowd</h1>
         <p class="text-xl text-gray-300 mb-8">Découvrez l'actualité ludique et participative</p>
         <div class="flex items-center justify-center space-x-4">
-          <a href="#" class="btn btn-soft btn-primary text-white px-6 py-3  font-semibold hover:bg-primary">Lire
+          <a href="#" class="btn btn-soft btn-primary px-6 py-3  font-semibold hover:bg-primary">Lire
             les
             articles</a>
           <a href="#"
