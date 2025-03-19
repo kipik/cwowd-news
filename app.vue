@@ -50,7 +50,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
               </svg>
-              <span class="badge badge-xs badge-primary indicator-item"></span>
+              <span class="badge badge-xs badge-primary indicator-item" />
             </div>
           </button>
         </div>
@@ -59,8 +59,8 @@
 
     <!-- Hero Section -->
     <section class="relative base-200 py-32">
-      <img src="/assets/images/hero-section.jpg" alt="Hero Image" class="absolute inset-0 object-cover w-full h-full" />
-      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <img src="/assets/images/hero-section.jpg" alt="Hero Image" class="absolute inset-0 object-cover w-full h-full">
+      <div class="absolute inset-0 bg-black opacity-50" />
       <div class="container mx-auto px-4 relative z-10 text-center">
         <h1 class="text-5xl font-bold text-white mb-4">Bienvenue sur Cwowd</h1>
         <p class="text-xl text-gray-300 mb-8">Découvrez l'actualité ludique et participative</p>
@@ -88,14 +88,14 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div class="base-200 rounded-lg shadow-md p-4">
             <img src="https://i.postimg.cc/DZ4Hfj7Q/OZOB-A-Cyberpunk-Boardgame-Nonsense-Creations.png" alt="Article 1"
-              class="mx-auto mb-2 h-64 w-full object-cover" />
+              class="mx-auto mb-2 h-64 w-full object-cover">
             <h3 class="text-sm font-semibold">Ozob: A Cyberpunk Board Game</h3>
             <p class="text-xs text-gray-500">Ozob plonge les joueurs dans un univers cyberpunk sombre et dangereux, où
               ils incarnent des rebelles, hackers, déviants etc. luttant contre les mégacorporations (what else ?).
               Ludiquement, il s’agit d’un dungeon crawler, coopératif, ambiancé cyberpunk tendance bas-fonds glauques.
-              Les amateurs s’en seront doutés au titre. </p>
+              Les amateurs s’en seront doutés au titre.</p>
             <div class="flex items-center mt-2 whitespace-nowrap">
-              <img src="https://avatar.iran.liara.run/public" alt="Thierry" class="rounded-full w-8 h-8 mr-2" />
+              <img src="https://avatar.iran.liara.run/public" alt="Thierry" class="rounded-full w-8 h-8 mr-2">
               <div>
                 <p class="text-xs text-gray-500">Author 1</p>
               </div>
@@ -103,14 +103,14 @@
           </div>
           <div class="base-200 rounded-lg shadow-md p-4">
             <img src="https://i.postimg.cc/qvsxh8sN/34d534ff-47d5-4055-af9c-49f41e96e986.webp"
-              alt="Bientôt sur GF : Qu’arz" class="mx-auto mb-2 h-64 w-full object-cover" />
+              alt="Bientôt sur GF : Qu’arz" class="mx-auto mb-2 h-64 w-full object-cover">
             <h3 class="text-sm font-semibold">La nouvelle annonce sur GF : Qu’arz</h3>
             <p class="text-xs text-gray-500">Aucune idée de ce dont il s’agit, c’est juste mon oeil qui fait des
               siennes, dès qu’il y a des images choupinesques, il papillonne…
 
             </p>
             <div class="flex items-center mt-2 whitespace-nowrap">
-              <img src="https://avatar.iran.liara.run/public/boy" alt="Leskiv27" class="rounded-full w-8 h-8 mr-2" />
+              <img src="https://avatar.iran.liara.run/public/boy" alt="Leskiv27" class="rounded-full w-8 h-8 mr-2">
               <div>
                 <p class="text-xs text-gray-500">Author 2</p>
               </div>
@@ -118,7 +118,7 @@
           </div>
           <div class="base-200 rounded-lg shadow-md p-4">
             <img src="assets\images\3-joueurs-joueuses-assis-autour-d-une-table--jouan.png"
-              alt="Les infos ludiques d ela semaine" class="mx-auto mb-2 h-64 w-full object-cover" />
+              alt="Les infos ludiques d ela semaine" class="mx-auto mb-2 h-64 w-full object-cover">
             <h3 class="text-sm font-semibold">Menu participatif et ludique de la semaine – Episode 1</h3>
             <p class="text-xs text-gray-500">Découvrez les projets ludiques les plus excitants de la semaine dans
               notre
@@ -127,7 +127,7 @@
             </p>
             <div class="flex items-center mt-2 whitespace-nowrap">
               <img src="https://avatar.iran.liara.run/public/37" alt="MathemW, Basara & Nsan"
-                class="rounded-full w-8 h-8 mr-2" />
+                class="rounded-full w-8 h-8 mr-2">
               <div>
                 <p class="text-xs text-gray-500">Author 3</p>
               </div>
