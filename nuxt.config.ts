@@ -28,4 +28,8 @@ export default defineNuxtConfig({
      */
     componentDir: './components/ui',
   },
+
+  image: {
+    dir: 'assets/images',
+  },
 });
