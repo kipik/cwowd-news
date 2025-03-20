@@ -1,17 +1,18 @@
+<!-- eslint-disable vue/first-attribute-linebreak -->
 <template>
     <section class="base-100 py-12">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between mb-4">
-                <h2 class="text-2xl font-bold">Articles à la une</h2>
+                <h2 class="text-2xl font-bold text-gray-400">Articles à la une</h2>
                 <a href="#" class="text-blue-500">Tous les articles →</a>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <article v-for="article in featuredArticles" :key="article.id"
-                    class="base-200 rounded-lg shadow-md p-4 transition-transform hover:scale-105">
+                    class="base-200 rounded-lg shadow-md p-4 transition-transform hover:scale-105 flex flex-col">
                     <nuxt-img :src="article.imageUrl" :alt="article.imageAlt"
                         class="mx-auto mb-2 h-64 w-full object-cover rounded-md lazy" />
-                    <h3 class="text-sm font-semibold">{{ article.title }}</h3>
-                    <p class="text-xs text-gray-500">{{ article.description }}</p>
+                    <h3 class="text-lg text-gray-700 font-semibold">{{ article.title }}</h3>
+                    <p class="text-xs text-gray-500 flex-grow">{{ article.description }}</p>
                     <div class="flex items-center mt-2 whitespace-nowrap">
                         <nuxt-img :src="article.authorAvatarUrl" :alt="article.author"
                             class="rounded-full w-8 h-8 mr-2" />

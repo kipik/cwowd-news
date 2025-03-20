@@ -2,7 +2,10 @@
     <section class="base-100 py-12">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between mb-4">
-                <h2 class="text-2xl font-bold">Jeux en promotion</h2>
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-400">Les jeux du moment</h2>
+                    <p class="text-gray-600 text-xs font-bold">A retrouver chez nos partenaires</p>
+                </div>
                 <a href="#" class="text-blue-500">Voir toutes les offres →</a>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-5 gap-4">

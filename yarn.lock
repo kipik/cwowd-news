@@ -589,6 +589,14 @@
   dependencies:
     "@iconify/types" "*"
 
+"@iconify/json@^2.2.318":
+  version "2.2.318"
+  resolved "https://registry.yarnpkg.com/@iconify/json/-/json-2.2.318.tgz#939adcd5f2d2c7ce8d21aed6c2cd8f550cf3ba86"
+  integrity sha512-8hmJxD/l322LLyQzt9s6aPCE6O+p86H9GVFhoH3hEQ9PRrU5O3Ptf8tlzFKzkBrBoEqdSzkAG5j8bwGt47Ragw==
+  dependencies:
+    "@iconify/types" "*"
+    pathe "^1.1.2"
+
 "@iconify/types@*", "@iconify/types@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@iconify/types/-/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
@@ -719,6 +727,11 @@
     nopt "^8.0.0"
     semver "^7.5.3"
     tar "^7.4.0"
+
+"@mdi/js@^7.4.47":
+  version "7.4.47"
+  resolved "https://registry.yarnpkg.com/@mdi/js/-/js-7.4.47.tgz#7d8a4edc9631bffeed80d1ec784f9beae559a76a"
+  integrity sha512-KPnNOtm5i2pMabqZxpUz7iQf+mfrYZyKCZ8QNz85czgEt7cuHcGorWfdzUMWYA0SD+a6Hn4FmJ+YhzzzjkTZrQ==
 
 "@napi-rs/wasm-runtime@^0.2.7":
   version "0.2.7"

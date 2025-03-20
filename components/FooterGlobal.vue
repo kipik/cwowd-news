@@ -7,9 +7,9 @@
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
                     <div>
                         <h3 class="text-lg font-bold mb-2">Cwowd</h3>
-                        <p class="text-sm">Cwowd est une communauté passionnée de joueurs de jeux de société, partageant
-                            des
-                            analyses, des impressions et des discussions autour de notre passion commune.</p>
+                        <p class="text-sm">Cwowd est une communauté de joueurs de jeux de société, partageant
+                            analyses, impressions, ressentis, conseils, bons plans etc. autour de notre passion commune.
+                        </p>
                     </div>
                     <div>
                         <h3 class="text-lg font-bold mb-2">Liens rapides</h3>
