@@ -27,7 +27,7 @@
                     </div>
 
                     <div class="space-y-4">
-                        <article v-for="hotTopic in hotTopics" :key="hotTopic.id"
+                        <article v-for="hotTopic in hotTopics.slice(0, 5)" :key="hotTopic.id"
                             class="base-100 rounded-lg shadow-md transition-shadow duration-200 hover:shadow-lg border border-gray-200">
                             <div class="p-3">
                                 <div class="flex items-start">
@@ -65,7 +65,7 @@
                         </a>
                     </div>
                     <div class="space-y-4">
-                        <article v-for="recentTopic in recentTopics" :key="recentTopic.id"
+                        <article v-for="recentTopic in recentTopics.slice(0, 5)" :key="recentTopic.id"
                             class="base-100 rounded-lg shadow-md transition-shadow duration-200 hover:shadow-lg border border-gray-200">
                             <div class="p-3">
                                 <div class="flex items-start">
@@ -80,18 +80,13 @@
                                                 {{ recentTopic.title }}
                                             </NuxtLink>
                                         </h4>
-                                        <div class="flex flex-wrap items-center gap-1 mt-1 text-sm text-gray-500">
-                                            <span>
-                                                Par
-                                                <NuxtLink :to="`/user/${recentTopic.author}`"
-                                                    class="text-blue-500 hover:underline">
-                                                    {{ recentTopic.author }}
-                                                </NuxtLink>
-                                            </span>
-                                            <span class="mx-0.5">•</span>
-                                            <span>{{ recentTopic.replies }} réponses</span>
-                                            <span class="mx-0.5">•</span>
-                                            <span>{{ recentTopic.date }}</span>
+                                        <div class="flex flex-wrap items-center gap-2 mt-2 text-sm text-gray-500">
+                                            <span>Dernier message par </span>
+                                            <NuxtLink :to="`/user/${recentTopic.author}`"
+                                                class="text-blue-500 hover:underline">
+                                                {{ recentTopic.author }}
+                                            </NuxtLink>
+                                            <span> {{ recentTopic.date }}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -154,6 +149,26 @@ const hotTopics: Topic[] = [
         views: 210,
         likes: 12
     },
+    {
+        id: "4",
+        title: "Des figurines Blood Bowl à gogo",
+        author: "Xavier",
+        avatarUrl: "https://avatar.iran.liara.run/public",
+        replies: 200,
+        date: "il y a 1h",
+        views: 1500,
+        likes: 78
+    },
+    {
+        id: "5",
+        title: "Le JDR Star Wars est-il bien ?",
+        author: "Marie",
+        avatarUrl: "https://avatar.iran.liara.run/public",
+        replies: 95,
+        date: "il y a 3h",
+        views: 650,
+        likes: 23
+    }
 ];
 
 const recentTopics: Topic[] = [
@@ -163,7 +178,7 @@ const recentTopics: Topic[] = [
         author: "Melissa",
         avatarUrl: "https://avatar.iran.liara.run/public",
         replies: 28,
-        date: "il y a 3 h",
+        date: "il y a 15 s",
     },
     {
         id: "5",
@@ -171,7 +186,7 @@ const recentTopics: Topic[] = [
         author: "Nicolas",
         avatarUrl: "https://avatar.iran.liara.run/public",
         replies: 33,
-        date: "il y a 2 j",
+        date: "il y a 1 min",
     },
     {
         id: "6",
@@ -179,8 +194,24 @@ const recentTopics: Topic[] = [
         author: "Sophie",
         avatarUrl: "https://avatar.iran.liara.run/public",
         replies: 45,
-        date: "il y a 1 j",
+        date: "il y a 3 min",
     },
+    {
+        id: "7",
+        title: "Peindre ses figurines pour les nuls",
+        author: "Antoine",
+        avatarUrl: "https://avatar.iran.liara.run/public",
+        replies: 62,
+        date: "il y a 4 min"
+    },
+    {
+        id: "8",
+        title: "Quelqu'un a testé le nouveau Marvel United ?",
+        author: "Camille",
+        avatarUrl: "https://avatar.iran.liara.run/public",
+        replies: 88,
+        date: "il y a 6 min",
+    }
 ];
 
 /* const heartIcon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 1.35-3 2.66-1.15-1.13-3-2.66-3-2.66A5.5 5.5 0 0 0 2 8.5c0 2.3 1.51 4.04 3 5.5a6.51 6.51 0 0 0 16 0Z"/></svg>`;
