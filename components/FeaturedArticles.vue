@@ -6,6 +6,7 @@
                 <h2 class="text-2xl font-bold text-gray-400">Articles à la une</h2>
                 <a href="#" class="text-blue-500">Tous les articles →</a>
             </div>
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <article v-for="article in featuredArticles" :key="article.id"
                     class="base-200 rounded-lg shadow-md p-4 transition-transform hover:scale-105 flex flex-col">

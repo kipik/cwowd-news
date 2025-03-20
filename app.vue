@@ -88,6 +88,76 @@ const myArticles = [
     author: 'MathemW, Basara & Nsan',
     authorAvatarUrl: 'https://avatar.iran.liara.run/public/37',
   },
+  {
+    id: '4',
+    title: 'Exploration des Ruines de Zephyria',
+    description:
+      'Plongez dans une aventure épique avec ce jeu de société coopératif où les joueurs explorent les ruines antiques de Zephyria. Affrontez des énigmes et des créatures mystérieuses pour découvrir les secrets oubliés.',
+    imageUrl: 'https://i.postimg.cc/vHbKjKZT/ruines-zephyria.jpg',
+    imageAlt: 'Ruines de Zephyria',
+    author: 'Alice',
+    authorAvatarUrl: 'https://avatar.iran.liara.run/public/alice',
+  },
+  {
+    id: '5',
+    title: 'Le Mystère des Îles Flottantes',
+    description:
+      'Dans ce jeu de stratégie, les joueurs doivent naviguer entre des îles flottantes pour résoudre un mystère ancien. Collectez des ressources, construisez des alliances et découvrez les secrets cachés dans les nuages.',
+    imageUrl: 'https://i.postimg.cc/5NzKZHkJ/iles-flottantes.jpg',
+    imageAlt: 'Îles Flottantes',
+    author: 'Bob',
+    authorAvatarUrl: 'https://avatar.iran.liara.run/public/bob',
+  },
+  {
+    id: '6',
+    title: 'La Révolte des Automates',
+    description:
+      'Dans un futur dystopique, les automates se rebellent contre leurs créateurs. Les joueurs doivent choisir leur camp et lutter pour le contrôle de la ville dans ce jeu de stratégie intense.',
+    imageUrl: 'https://i.postimg.cc/GhQkJKZT/revolte-automates.jpg',
+    imageAlt: 'Révolte des Automates',
+    author: 'Charlie',
+    authorAvatarUrl: 'https://avatar.iran.liara.run/public/charlie',
+  },
+  {
+    id: '7',
+    title: 'Le Jardin Enchanté',
+    description:
+      'Un jeu familial où les joueurs doivent cultiver et entretenir un jardin magique. Plantez des fleurs, attirez des créatures féeriques et faites pousser le plus beau jardin pour gagner.',
+    imageUrl: 'https://i.postimg.cc/6qWKZHkJ/jardin-enchante.jpg',
+    imageAlt: 'Jardin Enchanté',
+    author: 'Diana',
+    authorAvatarUrl: 'https://avatar.iran.liara.run/public/diana',
+  },
+  {
+    id: '8',
+    title: 'Les Chroniques de la Guilde des Voleurs',
+    description:
+      'Devenez un maître voleur et accomplissez des missions périlleuses dans ce jeu d’aventure. Évitez les gardes, déjouez les pièges et amassez le plus grand butin possible.',
+    imageUrl: 'https://i.postimg.cc/65KZHkJT/guilde-voleurs.jpg',
+    imageAlt: 'Guilde des Voleurs',
+    author: 'Eve',
+    authorAvatarUrl: 'https://avatar.iran.liara.run/public/eve',
+  },
+  {
+    id: '9',
+    title: 'L’Expédition Polaire',
+    description:
+      'Partez en expédition dans les régions polaires pour découvrir des trésors cachés et survivre aux conditions extrêmes. Ce jeu de survie mettra à l’épreuve vos compétences et votre esprit d’équipe.',
+    imageUrl: 'https://i.postimg.cc/65KZHkJT/expedition-polaire.jpg',
+    imageAlt: 'Expédition Polaire',
+    author: 'Frank',
+    authorAvatarUrl: 'https://avatar.iran.liara.run/public/frank',
+  },
+  {
+    id: '10',
+    title: 'Le Royaume des Dragons',
+    description:
+      'Dans ce jeu de stratégie, les joueurs incarnent des seigneurs dragons luttant pour le contrôle d’un royaume mythique. Utilisez vos pouvoirs draconiques pour conquérir des territoires et vaincre vos ennemis.',
+    imageUrl: 'https://i.postimg.cc/65KZHkJT/royaume-dragons.jpg',
+    imageAlt: 'Royaume des Dragons',
+    author: 'Grace',
+    authorAvatarUrl: 'https://avatar.iran.liara.run/public/grace',
+  }
 ]
 
 const hotTopics = [
