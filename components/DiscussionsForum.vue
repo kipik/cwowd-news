@@ -2,9 +2,13 @@
     <div class="space-y-4">
         <div class="flex items-center justify-between mb-4">
             <h3 class="text-xl font-semibold text-gray-300">{{ columnTitle }}</h3>
-            <a href="#" class="text-blue-500 text-sm">
+            <a :href="viewMoreUrl" v-if="viewMoreUrl" class="text-blue-500 text-sm">
                 Voir plus <span aria-hidden="true">→</span>
             </a>
+            <a href="#" v-else class="text-blue-500 text-sm">
+                Voir plus <span aria-hidden="true">→</span>
+            </a>
+
         </div>
         <div class="space-y-4">
             <article v-for="topic in topics" :key="topic.id"
@@ -83,25 +87,30 @@ const props = defineProps({
         type: String,
         validator: (value: string) => ['hot', 'recent', 'basic'].includes(value),
         default: 'basic'
+    },
+    viewMoreUrl: {
+        type: String,
+        default: undefined
     }
 });
-</script>
 
-*/
-voici quelques suggestions pour améliorer la section "On en discute" :
+/* Quelques suggestions pour améliorer la section "On en discute" :
 
 Structure et contenu :
-
 Pagination : ajoutez une pagination pour faciliter la navigation.
 
-
 Interface utilisateur :
-
 Ajouter des indicateurs visuels : Utilisez des icônes ou des couleurs pour indiquer le statut d'une discussion (par
 exemple, si elle est fermée, si elle contient de nouvelles réponses, etc.).
 
 Fonctionnalités :
-
 Intégration avec d'autres sections : Intégrez la section "On en discute" avec d'autres sections du site, comme les
 articles ou les publications, pour encourager la participation et les échanges.
-/*
+
+Gérer l'affichage des icônes : L'utilisation de Icon pour l'icône de cœur est bien, mais assurez-vous que la
+bibliothèque d'icônes est correctement configurée et que l'icône est toujours disponible. Si ce n'est pas le cas,
+prévoyez une alternative ou un message d'erreur clair.
+
+*/
+
+</script>

@@ -48,4 +48,14 @@ defineProps({
         required: true,
     },
 });
+
+/**
+Améliorer la gestion des images
+Utilisez des balises <img> avec des attributs srcset et sizes pour optimiser le chargement des images sur différents appareils. 
+Pensez également à utiliser un service d'optimisation d'image pour réduire la taille des fichiers image.
+
+Gérer les erreurs de chargement d'image
+Ajoutez une gestion des erreurs pour les cas où les images ne peuvent pas être chargées 
+(par exemple, en affichant une image de remplacement ou un message d'erreur). 
+*/
 </script>

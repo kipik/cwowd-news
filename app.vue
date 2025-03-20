@@ -27,9 +27,9 @@
           </div>
           <div class="flex flex-col md:flex-row gap-8">
             <DiscussionsForum columnTitle="Sujets brûlants" :topics="hotTopics" displayStyle="hot"
-              class="w-full md:w-1/2" />
+              class="w-full md:w-1/2" :viewMoreUrl="hotTopicsViewMoreUrl" />
             <DiscussionsForum columnTitle="Dernières discussions" :topics="recentTopics" displayStyle="recent"
-              class="w-full md:w-1/2" />
+              class="w-full md:w-1/2" :viewMoreUrl="recentTopicsViewMoreUrl" />
           </div>
 
           <div class="mt-8 text-center">
@@ -186,4 +186,31 @@ const recentTopics = [
   }
 ];
 
+const hotTopicsViewMoreUrl = "https://forum.cwowd.com/top";
+const recentTopicsViewMoreUrl = "https://forum.cwowd.com/latest";
+
+/** 
+ 
+ * Simplifier la structure des données
+ Si les données hotTopics et recentTopics proviennent d'une source externe (API, base de données), 
+ envisagez de normaliser la structure des données pour faciliter leur gestion et leur mise à jour.
+
+ * Ajouter des commentaires
+ Bien que le code soit assez clair, l'ajout de commentaires plus détaillés, 
+ en particulier pour expliquer la logique métier ou les choix architecturaux, 
+ améliorerait la maintenabilité du code.
+
+ * Accessibilité
+ Assurez-vous que votre code est accessible aux personnes handicapées en utilisant des balises HTML sémantiques, 
+ en fournissant un contraste de couleurs suffisant et en ajoutant des attributs alt descriptifs aux images.
+
+ * Performances
+ Utilisez un outil d'analyse de performances pour identifier les goulots d'étranglement potentiels et optimiser votre code en conséquence. 
+ Par exemple, vous pouvez utiliser la mise en cache, la compression et la minification pour améliorer les temps de chargement des pages.
+
+ * Tests
+ Écrivez des tests unitaires et des tests d'intégration pour vous assurer que votre code fonctionne comme prévu et qu'il est facile à maintenir et à faire évoluer.
+
+ Uniformiser les props avec les termes de Discourse (latest etc.)
+*/
 </script>
