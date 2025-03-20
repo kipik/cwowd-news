@@ -5,7 +5,7 @@
 
     <main>
       <HeroSection />
-      <FeaturedArticles :featuredArticles="myArticles" />
+      <FeaturedArticles :featured-articles="myArticles" />
       <PromotedGames />
       <DiscussionsForum />
       <ParolesDeJoueurs />
