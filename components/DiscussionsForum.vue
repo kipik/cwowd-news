@@ -107,7 +107,7 @@ Fonctionnalités :
 Intégration avec d'autres sections : Intégrez la section "On en discute" avec d'autres sections du site, comme les
 articles ou les publications, pour encourager la participation et les échanges.
 
-Gérer l'affichage des icônes : L'utilisation de Icon pour l'icône de cœur est bien, mais assurez-vous que la
+Gérer l'affichage des icônes: L'utilisation de Icon pour l'icône de cœur est bien, mais assurez-vous que la
 bibliothèque d'icônes est correctement configurée et que l'icône est toujours disponible. Si ce n'est pas le cas,
 prévoyez une alternative ou un message d'erreur clair.
 
