@@ -1,34 +1,37 @@
 <template>
     <section class="base-300 py-12">
         <div class="container mx-auto px-4">
+
             <h2 class="text-2xl font-bold text-gray-400 mb-8">À la une</h2>
+
             <div v-if="featuredArticles.length" class="relative w-full">
+
                 <Carousel :opts="{ align: 'start', loop: true }">
-                    <CarouselContent class="-ml-4">
+                    <CarouselContent class="-ml-6">
                         <CarouselItem v-for="article in featuredArticles" :key="article.id"
                             class="pl-4 md:basis-1/2 lg:basis-1/3 transition-opacity duration-500"
                             :style="{ opacity: isCurrent(article.id) ? 1 : 0.7 }">
                             <article
-                                class="bg-base-100 rounded-lg shadow-md transition-shadow duration-200 hover:shadow-lg border border-gray-200 flex flex-col h-full">
+                                class="rounded-lg shadow-md transition-shadow duration-200 hover:shadow-lg border border-gray-200 flex flex-col h-full">
                                 <NuxtLink :to="`/article/${article.id}`">
                                     <NuxtImg :src="article.imageUrl" :alt="article.imageAlt"
-                                        class="rounded-t-lg w-full h-48 object-cover" />
+                                        class="rounded-t-lg w-full h-80 object-cover" />
                                 </NuxtLink>
-                                <div class="p-4 flex-grow flex flex-col">
+                                <div class="p-6 flex-grow flex flex-col">
                                     <h3
                                         class="text-lg font-semibold text-gray-800 hover:text-blue-600 transition-colors">
                                         <NuxtLink :to="`/article/${article.id}`">
                                             {{ article.title }}
                                         </NuxtLink>
                                     </h3>
-                                    <p class="text-gray-600 mt-2 mb-4 line-clamp-3">
+                                    <p class="text-gray-600 mt-2 mb-1 line-clamp-3">
                                         {{ article.description }}
                                     </p>
                                 </div>
-                                <div class="flex items-center justify-end mt-auto p-4 border-t border-gray-200">
+                                <div class="flex items-center justify-end mt-auto p-1  border-gray-200">
                                     <NuxtImg :src="article.authorAvatarUrl" :alt="article.author"
                                         class="rounded-full w-8 h-8 mr-2" />
-                                    <p class="text-xs text-gray-500 ml-2">{{ article.author }}</p>
+                                    <p class="text-xs text-gray-500 ml-2 mr-4">Par {{ article.author }}</p>
                                 </div>
                             </article>
                         </CarouselItem>
@@ -36,6 +39,7 @@
                     <CarouselPrevious />
                     <CarouselNext />
                 </Carousel>
+
             </div>
             <p v-if="!featuredArticles.length" class="text-gray-500 text-center py-4">
                 Aucun article à la une pour le moment.
